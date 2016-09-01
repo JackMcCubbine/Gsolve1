@@ -1,0 +1,1908 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Gsolve</class>
+ <widget class="QMainWindow" name="Gsolve">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1251</width>
+    <height>834</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Gsolve</string>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <widget class="QToolBox" name="toolBox">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page_5">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>833</width>
+         <height>714</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>Relative Gravity Processing</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QTabWidget" name="tabWidget">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab">
+           <attribute name="title">
+            <string>Survey Data</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_6">
+            <item row="0" column="3">
+             <widget class="QPushButton" name="AddNewSurveyMeasurement">
+              <property name="text">
+               <string>Add New</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="4">
+             <widget class="QPushButton" name="RemoveSurveyMeasurement">
+              <property name="text">
+               <string>Remove</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QPushButton" name="SaveSurveyData">
+              <property name="text">
+               <string>Save Survey Data</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QPushButton" name="ImportsureveyData">
+              <property name="text">
+               <string>Import</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="2" column="0" colspan="6">
+             <widget class="QTableWidget" name="SurveyDataTab">
+              <property name="editTriggers">
+               <set>QAbstractItemView::AllEditTriggers</set>
+              </property>
+              <property name="dragEnabled">
+               <bool>true</bool>
+              </property>
+              <property name="selectionBehavior">
+               <enum>QAbstractItemView::SelectRows</enum>
+              </property>
+              <row>
+               <property name="text">
+                <string>1</string>
+               </property>
+              </row>
+              <column>
+               <property name="text">
+                <string>Name</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Latitude</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Longitude</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Elevation</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Dial</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Day</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Month</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Year</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Hour</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Minute</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Loop</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_3">
+           <attribute name="title">
+            <string>Solve</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_7">
+            <item row="0" column="0">
+             <widget class="QFrame" name="frame_6">
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_11">
+               <item row="0" column="0">
+                <widget class="QFrame" name="frame_4">
+                 <property name="minimumSize">
+                  <size>
+                   <width>291</width>
+                   <height>611</height>
+                  </size>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <widget class="QLabel" name="label">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>10</y>
+                    <width>46</width>
+                    <height>13</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                    <underline>true</underline>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Settings</string>
+                  </property>
+                 </widget>
+                 <widget class="QComboBox" name="CalTabSelect">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>50</y>
+                    <width>261</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_2">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>30</y>
+                    <width>131</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>Select Calibration Table:</string>
+                  </property>
+                 </widget>
+                 <widget class="QCheckBox" name="UseLoops">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>340</y>
+                    <width>82</width>
+                    <height>17</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>Use Loops</string>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_3">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>90</y>
+                    <width>141</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>Select Asolute Gravity Ties:</string>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="AddNewAbsTie">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>110</y>
+                    <width>75</width>
+                    <height>23</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>Add New</string>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="RemoveAbsTie">
+                  <property name="geometry">
+                   <rect>
+                    <x>160</x>
+                    <y>110</y>
+                    <width>75</width>
+                    <height>23</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>Remove</string>
+                  </property>
+                 </widget>
+                 <widget class="QTableWidget" name="SurveyTies">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>140</y>
+                    <width>221</width>
+                    <height>192</height>
+                   </rect>
+                  </property>
+                  <property name="editTriggers">
+                   <set>QAbstractItemView::AllEditTriggers</set>
+                  </property>
+                  <column>
+                   <property name="text">
+                    <string>Names</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Absolute Gravity</string>
+                   </property>
+                  </column>
+                 </widget>
+                 <widget class="QComboBox" name="MethodSelect">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>510</y>
+                    <width>261</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>Method 1: Normal Least Squares</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Method 2: Decoupled Least Squares</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Method 3: Constrained Least Squares</string>
+                   </property>
+                  </item>
+                 </widget>
+                 <widget class="QLabel" name="label_4">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>490</y>
+                    <width>131</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>Select Solution Method:</string>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="SolveAll">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>540</y>
+                    <width>261</width>
+                    <height>51</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>Solve</string>
+                  </property>
+                 </widget>
+                 <widget class="QCheckBox" name="CalculateBeta">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>460</y>
+                    <width>151</width>
+                    <height>17</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>Calculate Calibration Factor</string>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_5">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>410</y>
+                    <width>121</width>
+                    <height>16</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>Beta Calibration Factor:</string>
+                  </property>
+                 </widget>
+                 <widget class="QLineEdit" name="BetaIne">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>430</y>
+                    <width>113</width>
+                    <height>20</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>0</string>
+                  </property>
+                 </widget>
+                 <widget class="QLineEdit" name="ConfInt">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>380</y>
+                    <width>113</width>
+                    <height>20</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>100</string>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_9">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>360</y>
+                    <width>151</width>
+                    <height>16</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>Residual Confidence Interval:</string>
+                  </property>
+                 </widget>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QFrame" name="frame_10">
+                 <property name="minimumSize">
+                  <size>
+                   <width>471</width>
+                   <height>631</height>
+                  </size>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_15">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_8">
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                      <underline>true</underline>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Results:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0" colspan="2">
+                   <widget class="QTableWidget" name="MainResultsTabview">
+                    <property name="minimumSize">
+                     <size>
+                      <width>421</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="verticalScrollBarPolicy">
+                     <enum>Qt::ScrollBarAlwaysOn</enum>
+                    </property>
+                    <property name="editTriggers">
+                     <set>QAbstractItemView::NoEditTriggers</set>
+                    </property>
+                    <row>
+                     <property name="text">
+                      <string>1</string>
+                     </property>
+                    </row>
+                    <column>
+                     <property name="text">
+                      <string>Name</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Absolute Gravity</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Standard Error</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Number Obs.</string>
+                     </property>
+                    </column>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QPushButton" name="ExportResults">
+                    <property name="text">
+                     <string>Export</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_4">
+           <attribute name="title">
+            <string>Detailed Results and Plotting</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_10">
+            <item row="1" column="2">
+             <widget class="QFrame" name="frame_9">
+              <property name="minimumSize">
+               <size>
+                <width>231</width>
+                <height>61</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <widget class="QLabel" name="label_6">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>46</width>
+                 <height>13</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Loop:</string>
+               </property>
+              </widget>
+              <widget class="QComboBox" name="LoopCDFSel">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>20</y>
+                 <width>81</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <item>
+                <property name="text">
+                 <string>All</string>
+                </property>
+               </item>
+              </widget>
+              <widget class="QPushButton" name="CDFplot">
+               <property name="geometry">
+                <rect>
+                 <x>90</x>
+                 <y>20</y>
+                 <width>121</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>CDF plot of residuals</string>
+               </property>
+              </widget>
+              <widget class="QComboBox" name="LoopSel_2">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>70</y>
+                 <width>81</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <item>
+                <property name="text">
+                 <string>All</string>
+                </property>
+               </item>
+              </widget>
+              <widget class="QPushButton" name="driftplot_2">
+               <property name="geometry">
+                <rect>
+                 <x>90</x>
+                 <y>70</y>
+                 <width>121</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Plot drift and residuals </string>
+               </property>
+              </widget>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QFrame" name="frame_8">
+              <property name="minimumSize">
+               <size>
+                <width>141</width>
+                <height>41</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <widget class="QLineEdit" name="BetaOut">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>20</y>
+                 <width>113</width>
+                 <height>20</height>
+                </rect>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_7">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>0</y>
+                 <width>121</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Beta Calibration Factor:</string>
+               </property>
+              </widget>
+             </widget>
+            </item>
+            <item row="0" column="0" colspan="4">
+             <widget class="QTableWidget" name="DetailedResultsTabview">
+              <property name="editTriggers">
+               <set>QAbstractItemView::NoEditTriggers</set>
+              </property>
+              <column>
+               <property name="text">
+                <string>Name</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Latitude</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Longitude</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Elevation</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Dial</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Calibrate Dial</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Day</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Month</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Year</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Hour</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Minute</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Tidal Effect</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Loop</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Residual</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item row="1" column="0" rowspan="2">
+             <widget class="QTableWidget" name="DriftTabview">
+              <property name="minimumSize">
+               <size>
+                <width>231</width>
+                <height>192</height>
+               </size>
+              </property>
+              <property name="editTriggers">
+               <set>QAbstractItemView::NoEditTriggers</set>
+              </property>
+              <row>
+               <property name="text">
+                <string>1</string>
+               </property>
+              </row>
+              <column>
+               <property name="text">
+                <string>Loop</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Drift mGal/hour</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item row="2" column="3">
+             <widget class="QPushButton" name="ExportDetailedResults">
+              <property name="text">
+               <string>Export</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+           <zorder>DetailedResultsTabview</zorder>
+           <zorder>DriftTabview</zorder>
+           <zorder>ExportDetailedResults</zorder>
+           <zorder>frame_8</zorder>
+           <zorder>frame_9</zorder>
+          </widget>
+          <widget class="QWidget" name="tab_5">
+           <attribute name="title">
+            <string>Gravity Reductions</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="0" column="0">
+             <widget class="QTableWidget" name="GravityReductionsTab">
+              <property name="minimumSize">
+               <size>
+                <width>781</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="verticalScrollBarPolicy">
+               <enum>Qt::ScrollBarAlwaysOn</enum>
+              </property>
+              <property name="editTriggers">
+               <set>QAbstractItemView::NoEditTriggers</set>
+              </property>
+              <row>
+               <property name="text">
+                <string>1</string>
+               </property>
+              </row>
+              <column>
+               <property name="text">
+                <string>Name</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Absolute Gravity</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Latitude</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Longitude</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Elevation </string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Ellipsoidal Gravity</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Free Air Effect</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Free Air Anomaly</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QFrame" name="frame_13">
+              <property name="minimumSize">
+               <size>
+                <width>791</width>
+                <height>221</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <widget class="QPushButton" name="ExportGravityreductions">
+               <property name="geometry">
+                <rect>
+                 <x>660</x>
+                 <y>20</y>
+                 <width>121</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Export</string>
+               </property>
+              </widget>
+              <widget class="QComboBox" name="Ellipsoidselect">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>30</y>
+                 <width>221</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <item>
+                <property name="text">
+                 <string>GRS80</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>GRS67</string>
+                </property>
+               </item>
+              </widget>
+              <widget class="QLabel" name="label_10">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>10</y>
+                 <width>101</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Select an Ellipsoid:</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="UpdateEll">
+               <property name="geometry">
+                <rect>
+                 <x>240</x>
+                 <y>30</y>
+                 <width>75</width>
+                 <height>23</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Update</string>
+               </property>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_6">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>807</width>
+         <height>722</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>Terrain Corrections</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QTabWidget" name="tabWidget_7">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="Importdata">
+           <attribute name="title">
+            <string>Import DEM Data</string>
+           </attribute>
+           <layout class="QFormLayout" name="formLayout_3">
+            <item row="0" column="0">
+             <widget class="QFrame" name="frame_7">
+              <property name="minimumSize">
+               <size>
+                <width>161</width>
+                <height>659</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_2">
+               <item row="0" column="0">
+                <widget class="QPushButton" name="ImportDEM">
+                 <property name="text">
+                  <string>Import DEM</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QGroupBox" name="groupBox_2">
+                 <property name="minimumSize">
+                  <size>
+                   <width>161</width>
+                   <height>71</height>
+                  </size>
+                 </property>
+                 <property name="title">
+                  <string>Parameters</string>
+                 </property>
+                 <widget class="QLineEdit" name="Resolution">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>40</y>
+                    <width>113</width>
+                    <height>20</height>
+                   </rect>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_14">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>20</y>
+                    <width>71</width>
+                    <height>16</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>Resolution (m)</string>
+                  </property>
+                 </widget>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QFrame" name="frame_14">
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_17">
+               <item row="1" column="0" colspan="3">
+                <widget class="MatplotlibWidget" name="mplwidget" native="true">
+                 <property name="autoFillBackground">
+                  <bool>true</bool>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <spacer name="horizontalSpacer_2">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>387</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_6">
+           <attribute name="title">
+            <string>Import Observation Points</string>
+           </attribute>
+           <layout class="QFormLayout" name="formLayout_2">
+            <item row="0" column="0">
+             <widget class="QWidget" name="widget_2" native="true">
+              <property name="minimumSize">
+               <size>
+                <width>759</width>
+                <height>659</height>
+               </size>
+              </property>
+              <widget class="QTableWidget" name="EastingsNorthingsTC">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>40</y>
+                 <width>741</width>
+                 <height>601</height>
+                </rect>
+               </property>
+               <property name="editTriggers">
+                <set>QAbstractItemView::AllEditTriggers</set>
+               </property>
+               <column>
+                <property name="text">
+                 <string>Name</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Latitude</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Longitude</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Eastings (m)</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Northings (m)</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Height (m)</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>DEM Height (m)</string>
+                </property>
+               </column>
+              </widget>
+              <widget class="QPushButton" name="ImportdatapointsTC">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>10</y>
+                 <width>131</width>
+                 <height>23</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Import Data Points</string>
+               </property>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_7">
+           <attribute name="title">
+            <string>Calculate Terrain Correction</string>
+           </attribute>
+           <layout class="QFormLayout" name="formLayout">
+            <item row="0" column="1">
+             <widget class="QFrame" name="frame_16">
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_18">
+               <item row="0" column="1">
+                <spacer name="horizontalSpacer_3">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>387</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="1" column="0" colspan="3">
+                <widget class="MatplotlibWidget" name="TCplot2" native="true">
+                 <property name="autoFillBackground">
+                  <bool>true</bool>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QFrame" name="frame_15">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>166</width>
+                <height>651</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <widget class="QGroupBox" name="groupBox">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>10</y>
+                 <width>151</width>
+                 <height>641</height>
+                </rect>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>151</width>
+                 <height>392</height>
+                </size>
+               </property>
+               <property name="title">
+                <string>Parameters</string>
+               </property>
+               <widget class="QLabel" name="label_12">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>70</y>
+                  <width>101</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Outter Radius (m) </string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="outterradTC">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>90</y>
+                  <width>113</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>120000</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="innerradTC">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>50</y>
+                  <width>113</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>170</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_11">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>30</y>
+                  <width>101</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Inner Radius (m) </string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_13">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>120</y>
+                  <width>101</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Density (g/cm^3)</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="density">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>140</y>
+                  <width>113</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>2.67</string>
+                </property>
+               </widget>
+               <widget class="QPushButton" name="CalcTC">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>180</y>
+                  <width>151</width>
+                  <height>51</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Calculate Terrain Corrections</string>
+                </property>
+               </widget>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_8">
+           <attribute name="title">
+            <string>Results</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QWidget" name="widget_3" native="true">
+              <property name="minimumSize">
+               <size>
+                <width>759</width>
+                <height>659</height>
+               </size>
+              </property>
+              <widget class="QTableWidget" name="EastingsNorthingsTC_results">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>20</y>
+                 <width>751</width>
+                 <height>461</height>
+                </rect>
+               </property>
+               <property name="editTriggers">
+                <set>QAbstractItemView::AllEditTriggers</set>
+               </property>
+               <column>
+                <property name="text">
+                 <string>Name</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Latitude</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Longitude</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Eastings (m)</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Northings (m)</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Height (m)</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>DEM Height (m)</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Terrain Corr (mGal)</string>
+                </property>
+               </column>
+              </widget>
+              <widget class="QPushButton" name="ExportTCresults">
+               <property name="geometry">
+                <rect>
+                 <x>610</x>
+                 <y>630</y>
+                 <width>131</width>
+                 <height>23</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Export</string>
+               </property>
+              </widget>
+              <widget class="QTableWidget" name="TCparameter_results">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>500</y>
+                 <width>421</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>421</width>
+                 <height>61</height>
+                </size>
+               </property>
+               <property name="editTriggers">
+                <set>QAbstractItemView::AllEditTriggers</set>
+               </property>
+               <row>
+                <property name="text">
+                 <string>1</string>
+                </property>
+               </row>
+               <column>
+                <property name="text">
+                 <string>Density (kg/m^3)</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Resolution (m)</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Inner Radius (m)</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Outter Radius (m)</string>
+                </property>
+               </column>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1251</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionGsolve_Help"/>
+    <addaction name="separator"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QDockWidget" name="dockWidget">
+   <property name="minimumSize">
+    <size>
+     <width>428</width>
+     <height>793</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>428</width>
+     <height>763</height>
+    </size>
+   </property>
+   <property name="features">
+    <set>QDockWidget::DockWidgetFloatable|QDockWidget::DockWidgetMovable</set>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::LeftDockWidgetArea|Qt::RightDockWidgetArea|Qt::TopDockWidgetArea</set>
+   </property>
+   <property name="windowTitle">
+    <string>General</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_2">
+    <layout class="QGridLayout" name="gridLayout_4">
+     <item row="0" column="0">
+      <widget class="QTabWidget" name="ImportNewAbdG">
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>Calibration Tables</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="0" column="0">
+          <widget class="QFrame" name="frame_2">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_8">
+            <item row="0" column="1">
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <item>
+               <widget class="QComboBox" name="CalibrationTabSelectview">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>23</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="CalibrationTabView">
+                <property name="mouseTracking">
+                 <bool>false</bool>
+                </property>
+                <property name="autoFillBackground">
+                 <bool>false</bool>
+                </property>
+                <property name="editTriggers">
+                 <set>QAbstractItemView::NoEditTriggers</set>
+                </property>
+                <property name="selectionBehavior">
+                 <enum>QAbstractItemView::SelectRows</enum>
+                </property>
+                <property name="sortingEnabled">
+                 <bool>true</bool>
+                </property>
+                <attribute name="horizontalHeaderDefaultSectionSize">
+                 <number>90</number>
+                </attribute>
+                <row>
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                </row>
+                <row>
+                 <property name="text">
+                  <string>2</string>
+                 </property>
+                </row>
+                <row>
+                 <property name="text">
+                  <string>3</string>
+                 </property>
+                </row>
+                <row>
+                 <property name="text">
+                  <string>4</string>
+                 </property>
+                </row>
+                <row>
+                 <property name="text">
+                  <string>5</string>
+                 </property>
+                </row>
+                <row>
+                 <property name="text">
+                  <string>6</string>
+                 </property>
+                </row>
+                <row>
+                 <property name="text">
+                  <string>7</string>
+                 </property>
+                </row>
+                <row>
+                 <property name="text">
+                  <string>8</string>
+                 </property>
+                </row>
+                <row>
+                 <property name="text">
+                  <string>9</string>
+                 </property>
+                </row>
+                <row>
+                 <property name="text">
+                  <string>10</string>
+                 </property>
+                </row>
+                <column>
+                 <property name="text">
+                  <string>Lower</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Upper</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Factor</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="0" column="0">
+             <widget class="QFrame" name="frame_3">
+              <property name="minimumSize">
+               <size>
+                <width>71</width>
+                <height>659</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <widget class="QPushButton" name="ImportNewCalTab">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>71</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Import New</string>
+               </property>
+              </widget>
+              <widget class="QFrame" name="frame_5">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>580</y>
+                 <width>71</width>
+                 <height>80</height>
+                </rect>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+              </widget>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QPushButton" name="RemoveCalTab">
+              <property name="text">
+               <string>Remove this calibration table</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="widget">
+        <attribute name="title">
+         <string>Absolute Gravity Sites</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_13">
+         <item row="0" column="0">
+          <widget class="QFrame" name="frame">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_14">
+            <item row="0" column="1" rowspan="2" colspan="2">
+             <widget class="QTableWidget" name="AbsGTabview">
+              <property name="editTriggers">
+               <set>QAbstractItemView::AllEditTriggers</set>
+              </property>
+              <property name="selectionBehavior">
+               <enum>QAbstractItemView::SelectRows</enum>
+              </property>
+              <property name="sortingEnabled">
+               <bool>true</bool>
+              </property>
+              <row>
+               <property name="text">
+                <string>1</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>2</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>3</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>4</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>5</string>
+               </property>
+              </row>
+              <column>
+               <property name="text">
+                <string>Name</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Absolute Gravity</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Latitude</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Longitude</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QFrame" name="frame_12">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>51</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_12">
+               <item row="0" column="1">
+                <widget class="QPushButton" name="RemoveAbsG">
+                 <property name="text">
+                  <string>Remove Selected</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <widget class="QPushButton" name="SaveNewAbsG">
+                 <property name="text">
+                  <string>Save</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QPushButton" name="AddNewAbsG">
+                 <property name="text">
+                  <string>Add New</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="0" rowspan="2">
+             <widget class="QFrame" name="frame_11">
+              <property name="minimumSize">
+               <size>
+                <width>81</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <widget class="QPushButton" name="ImportNewAbsG">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>10</y>
+                 <width>71</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Import New</string>
+               </property>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionGsolve_Help">
+   <property name="text">
+    <string>Gsolve Help</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MatplotlibWidget</class>
+   <extends>QWidget</extends>
+   <header>matplotlibwidget</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>CalculateBeta</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>BetaIne</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>151</x>
+     <y>587</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>146</x>
+     <y>563</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>10</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>10</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>
